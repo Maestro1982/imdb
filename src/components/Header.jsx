@@ -1,5 +1,6 @@
 import React from 'react';
 import MenuItem from './MenuItem';
+import DarkModeSwitch from './DarkModeSwitch';
 import { IoHome } from 'react-icons/io5';
 import { FaInfoCircle } from 'react-icons/fa';
 import Link from 'next/link';
@@ -13,7 +14,8 @@ export default function Header() {
         <MenuItem title='ABOUT' address='/about' Icon={FaInfoCircle} />
       </div>
       {/* Right Side */}
-      <div className=''>
+      <div className='flex items-center space-x-5'>
+        <DarkModeSwitch />
         <Link href='/'>
           <h2 className='text-2xl'>
             <span className='font-bold bg-amber-500 py-1 px-2 rounded-lg mr-1'>
