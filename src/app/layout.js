@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import Navbar from '@/components/Navbar';
 import SearchBox from '@/components/SearchBox';
@@ -13,6 +14,7 @@ export default function RootLayout({ children }) {
           <Navbar />
           <SearchBox />
           {children}
+          <Footer />
         </Providers>
       </body>
     </html>
